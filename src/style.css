@@ -5,13 +5,22 @@
     box-sizing: border-box;
 }
 
-/* Body Styling */
+/* Ensure the body takes up the full height of the viewport */
 body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
     font-family: 'Arial', sans-serif;
     background-color: #f5f5f5;
     color: #333;
     line-height: 1.6;
     padding: 20px;
+}
+
+/* Main content area to push the footer to the bottom */
+#root {
+    flex: 1;
 }
 
 /* Header Styling */
@@ -123,7 +132,7 @@ footer {
     color: #fff;
     text-align: center;
     padding: 15px 0;
-    margin-top: 20px;
+    margin-top: auto;
     font-size: 0.9rem;
 }
 
